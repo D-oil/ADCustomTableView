@@ -8,6 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
+typedef NS_ENUM(NSUInteger, doorState) {
+    doorState_null,
+    doorState_closed,
+    doorState_halfopened,
+    doorState_opened,
+    doorState_error
+};
+
 @interface EventTableViewCell : UITableViewCell
 
 @property (weak, nonatomic) IBOutlet UIImageView *timeLineImageView;
@@ -21,7 +29,16 @@
 @property (weak, nonatomic) IBOutlet UIView *gitView;
 @property (weak, nonatomic) IBOutlet UIWebView *gifWebView;
 
+
+- (void)setCameraNameText:(NSString *)nameText;
+- (void)setCameratimeLabel:(NSString *)timeText;
+- (void)setCameraEventInfo:(NSString *)eventInfo;
+
 //if load gif data or download gif success cell play gif;
 - (void)playgifWithData:(NSData *)gifData;
+
+- (void)setLeftDoorState:(doorState)leftDoorState;
+- (void)setRightDoorState:(doorState)rigthDoorState;
+
 
 @end

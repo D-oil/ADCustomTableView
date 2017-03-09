@@ -18,10 +18,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    
-    
 }
-
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
     return 10;
@@ -34,9 +31,19 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell;
+    EventTableViewCell *cell;
     cell = [tableView dequeueReusableCellWithIdentifier:@"eventCell"];
-    
+    if (indexPath.row == 1) {
+        [cell setLeftDoorState:doorState_null];
+        [cell setRightDoorState:doorState_error];
+        NSString *filePath = [[NSBundle mainBundle] pathForResource:@"Ring Activity Zone" ofType:@"gif"];
+        NSData *data = [[NSData alloc] initWithContentsOfFile:filePath];
+        [cell playgifWithData:data];
+    } else {
+        [cell setLeftDoorState:doorState_closed];
+        [cell setRightDoorState:doorState_closed];
+        [cell playgifWithData:nil];
+    }
     return cell;
 }
 

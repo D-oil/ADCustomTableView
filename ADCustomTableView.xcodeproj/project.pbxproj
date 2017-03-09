@@ -18,6 +18,7 @@
 		76A2D0D01E6FAB640077ADF7 /* customTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 76A2D0CF1E6FAB640077ADF7 /* customTableViewDataSource.m */; };
 		76A2D0D81E6FE5760077ADF7 /* eventHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 76A2D0D71E6FE5760077ADF7 /* eventHeaderView.m */; };
 		76A2D0DA1E7010F20077ADF7 /* Ring Activity Zone.gif in Resources */ = {isa = PBXBuildFile; fileRef = 76A2D0D91E7010F20077ADF7 /* Ring Activity Zone.gif */; };
+		92173CF11E705F550032F90A /* eventModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 92173CEF1E705F550032F90A /* eventModel.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		76A2D0D61E6FE5760077ADF7 /* eventHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = eventHeaderView.h; sourceTree = "<group>"; };
 		76A2D0D71E6FE5760077ADF7 /* eventHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = eventHeaderView.m; sourceTree = "<group>"; };
 		76A2D0D91E7010F20077ADF7 /* Ring Activity Zone.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Ring Activity Zone.gif"; sourceTree = "<group>"; };
+		92173CF01E705F550032F90A /* eventModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = eventModel.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +92,7 @@
 				76A2D0CC1E6FA9BE0077ADF7 /* EventTableViewCell.m */,
 				76A2D0D61E6FE5760077ADF7 /* eventHeaderView.h */,
 				76A2D0D71E6FE5760077ADF7 /* eventHeaderView.m */,
+				92173CEF1E705F550032F90A /* eventModel.xcdatamodeld */,
 			);
 			path = ADCustomTableView;
 			sourceTree = "<group>";
@@ -177,6 +180,7 @@
 			files = (
 				76A2D0B91E6FA92C0077ADF7 /* ViewController.m in Sources */,
 				76A2D0CA1E6FA99B0077ADF7 /* ADCustomTableView.m in Sources */,
+				92173CF11E705F550032F90A /* eventModel.xcdatamodeld in Sources */,
 				76A2D0B61E6FA92C0077ADF7 /* AppDelegate.m in Sources */,
 				76A2D0D01E6FAB640077ADF7 /* customTableViewDataSource.m in Sources */,
 				76A2D0B31E6FA92C0077ADF7 /* main.m in Sources */,
@@ -341,6 +345,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		92173CEF1E705F550032F90A /* eventModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				92173CF01E705F550032F90A /* eventModel.xcdatamodel */,
+			);
+			currentVersion = 92173CF01E705F550032F90A /* eventModel.xcdatamodel */;
+			path = eventModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 76A2D0A61E6FA92C0077ADF7 /* Project object */;
 }
